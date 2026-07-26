@@ -1,0 +1,12 @@
+prefix: "&c&lBUG » "
+
+bug:
+  usage: "&cUsage: &e/bug <description>"
+  sent:
+    - "{prefix}&aBug reported!"
+    - "&7Thank you for reporting &c❤"
+  cooldown: "{prefix}&cYou're on cooldown! Please wait &e{time}"
+
+staff:
+  notify:
+    - "{prefix}&e{player} &7reported a bug: &f{message}"

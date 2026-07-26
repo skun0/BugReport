@@ -1,0 +1,31 @@
+plugins {
+    java
+}
+
+group = "net.skuno"
+version = "1.0"
+
+repositories {
+    mavenCentral()
+
+    maven {
+        name = "spigotmc"
+        url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    }
+}
+
+dependencies {
+    compileOnly("org.spigotmc:spigot-api:1.21.11-R0.1-SNAPSHOT")
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
+tasks {
+    withType<JavaCompile> {
+        options.encoding = "UTF-8"
+    }
+}

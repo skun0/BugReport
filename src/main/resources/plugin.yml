@@ -1,0 +1,17 @@
+name: BugReport
+version: 1.0
+main: net.skuno.Main
+api-version: '1.21'
+
+commands:
+  bug:
+    description: Report a bug
+    usage: /bug <description>
+
+permissions:
+  bug.notify:
+    description: Receive bug reports
+    default: op
+  bug.cooldownbypass:
+    description: Bypass Bug reports cooldown
+    default: op
